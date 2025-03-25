@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upcoming Events</title>
+  <link rel="stylesheet" href="upcoming.css">
+</head>
+
+<body>
+  <header>
+    <h1>Past Events</h1>
+    <nav>
+      
+      <ul>
+        <li><a href="eventspage.html">Events</a></li>
+        <li><a href="demo2.html">Home</a></li>
+      </ul>
+
+    <input type="date" id="dateSearch" placeholder="Search by date" />
+    <button id="searchButton">Search</button>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+    <section class="event-container" id="eventContainer">
+      <div class="event-card" data-date="2024-10-10">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.81Vkk9YVXQXsj-PbLHL1FQHaCD&pid=Api&P=0&h=180" alt="Event 1">
+        <h3>TechCon 2024: The Future of Innovation</h3>
+        <p>Join us for a day of groundbreaking talks, networking opportunities, and hands-on workshops exploring the latest trends in technology.</p>
+        <p><strong>Date:</strong> 10 October, 2024</p>
+        <p><strong>Location:</strong> Chitkara University</p>
+        <h1>Event Completed</h1>
+      </div>
+
+      <div class="event-card" data-date="2024-10-12">
+        <img src="open garage.jpg" alt="Event 2">
+        <h3>Open Garage</h3>
+        <p>EVOLVE AI is thrilled to announce the much-awaited event: “OPEN GARAGE”! This is your chance to have your groundbreaking startup ideas approved under the motto ‘INNOVATION FOR GOOD’.</p>
+        <p><strong>Date:</strong> 12 October, 2024</p>
+        <p><strong>Location:</strong> Chitkara University</p>
+        <h1>Event Completed</h1>
+      </div>
+
+      <div class="event-card" data-date="2024-10-04">
+        <img src="code blitz.jpg" alt="Event 3">
+        <h3>Code Blitz</h3>
+        <p>Test your Limits with Code blitz and redefine possibilities. Register now to get a chance to take home goodies and surprises. Blings with the code. Be ready with your laptops.</p>
+        <p><strong>Date:</strong> 4 October, 2024</p>
+        <p><strong>Location:</strong> Chitkara University</p>
+        <h1>Event Completed</h1>
+      </div>
+
+      <div class="event-card" data-date="2024-10-08">
+        <img src="img4.jpg" alt="Event 4">
+        <h3>Driving Innovation</h3>
+        <p>Are you eager to dive into the expansive world of Big Data and uncover new opportunities? You won’t want to miss this phenomenal event!</p>
+        <p><strong>Date:</strong> 8 October, 2024</p>
+        <p><strong>Location:</strong> Chitkara University</p>
+        <h1>Event Completed</h1>
+      </div>
+
+      <div class="event-card" data-date="2024-10-16">
+        <img src="img5.jpg" alt="Event 5">
+        <h3>Operating System Environment</h3>
+        <p>Get ready to unleash your coding skills and join us for an exciting event - "CyberCarnival: Unleash Web Carnival"!</p>
+        <p><strong>Date:</strong> 16 October, 2024</p>
+        <p><strong>Location:</strong> Chitkara University</p>
+        <h1>Event Completed</h1>
+      </div>
+
+      <div class="event-card" data-date="2024-10-17">
+        <img src="img6.jpg" alt="Event 6">
+        <h3>Meet Your Alumni</h3>
+        <p>Celebrate the vibrant arts scene with live music, dance performances, art exhibitions, and food trucks.</p>
+        <p><strong>Date:</strong> 17 October, 2024</p>
+        <p><strong>Location:</strong> Chitkara University</p>
+        <h1>Event Completed</h1>
+      </div>
+
+      <div class="event-card" data-date="2024-10-16">
+        <img src="img7.jpeg.jpg" alt="Event 7">
+        <h3>ITS</h3>
+        <p>Institut Teknologi Sepuluh Nopember (ITS) in Indonesia hosts a virtual course: Fun Bahasa Indonesia and Cultural Course (FBICC).</p>
+        <p><strong>Date:</strong> 16 October, 2024</p>
+        <p><strong>Location:</strong> Chitkara University</p>
+        <h1>Event Completed</h1>
+      </div>
+
+      <div class="event-card" data-date="2024-10-20">
+        <img src="img8.jpg" alt="Event 8">
+        <h3>ENVISION</h3>
+        <p>Adventure Awaits at Envision: "Where Timeless Bonds Foster Innovation!"</p>
+        <p><strong>Date:</strong> 20 October, 2024</p>
+        <p><strong>Location:</strong> Chitkara University</p>
+        <h1>Event Completed</h1>
+      </div>
+
+      <div class="event-card" data-date="2024-10-17">
+        <img src="img9.jpg" alt="Event 9">
+        <h3>Hack Your Brain</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p><strong>Date:</strong> 17 October, 2024</p>
+        <p><strong>Location:</strong> Chitkara University</p>
+        <h1>Event Completed</h1>
+      </div>
+
+      <div class="event-card" data-date="2024-10-21">
+        <img src="img10.jpg" alt="Event 10">
+        <h3>Salsa Workshop</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p><strong>Date:</strong> 21 October, 2024</p>
+        <p><strong>Location:</strong> Chitkara University</p>
+        <h1>Event Completed</h1>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 uEvents. All rights reserved.</p>
+    <nav>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script>
+    document.getElementById("searchButton").addEventListener("click", function() {
+      const dateInput = document.getElementById("dateSearch").value; 
+      const eventCards = document.querySelectorAll(".event-card");
+    
+      eventCards.forEach(card => {
+        const cardDate = card.getAttribute("data-date");
+        if (cardDate === dateInput) {
+          card.style.display = "block"; 
+        } else {
+          card.style.display = "none"; 
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

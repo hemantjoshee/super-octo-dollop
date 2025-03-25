@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="about.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mochiy+Pop+P+One&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@500&family=Mochiy+Pop+P+One&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Supermercado+One&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+          }
+          
+          body {
+            background-color: #2a2a2c;
+          }
+          
+          .header {
+            min-height: 100vh;
+            width: 100%;
+            background: #131417;
+            position: relative;
+          }
+          .navbar {
+            display: flex;
+            padding: 20px 50px;
+            align-items: center;
+            background: #2a2a2c;
+            transition: all 0.3s ease-in-out;
+          }
+          nav {
+            flex: 1;
+            text-align: right;
+          }
+          .logo img {
+            transition: 0.8s ease-in-out;
+            margin-top: 4px;
+            cursor: pointer;
+          }
+          .logo img:hover {
+            transform: scale(1.12) rotate(360deg);
+          }
+          nav ul {
+            display: inline-block;
+            list-style-type: none;
+          }
+          nav ul li {
+            display: inline-block;
+            border: 1px solid #ff9100;
+            padding: 7px 22px;
+            margin: 10px 15px;
+            box-shadow: 4px 4px 5.5px #131417;
+            transition: 0.3s;
+            cursor: pointer;
+          }
+          a {
+            text-decoration: none;
+            color: #ff9100;
+            font-size: 15.5px;
+            font-family: "Poppins", sans-serif;
+            cursor: pointer;
+          }
+          nav ul li:hover a {
+            color: #ffffff;
+          }
+          nav ul li:hover {
+            background: #ff9100;
+            border: 1px solid #ff9100;
+            transform: translate(-6px, -6px);
+          }
+          
+          .about1 {
+            width: 90%;
+            height: 15vh;
+            margin: auto;
+            background-color: #2a2a2c;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            border-radius: 1rem;
+            margin-top: 2rem;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8vw;
+            padding-left: 1vw;
+            border-left: 0.3rem solid #ff9100;
+          }
+          .about1:hover {
+            transition: transform 0.2s ease;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+              rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          }
+          hr {
+            width: 90%;
+            margin: auto;
+            margin-top: 2rem;
+            border: 1.5px solid #ff9100;
+            border-radius: 1em;
+          }
+          .about2 {
+            width: 90%;
+            height: 80%;
+            margin: auto;
+            margin-top: 2rem;
+            padding-left: 1vh;
+            padding-right: 1vh;
+            color: white;
+            text-align: center;
+            background-color: #2a2a2c;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            border-radius: 1rem;
+            border-left: 0.3rem solid #ff9100;
+            padding-bottom: 2rem;
+          }
+          
+          .about2 h2 {
+            font-family: "Poppins", sans-serif;
+            color: #ff9100;
+            font-size: 40px;
+          }
+          
+          .about2 p {
+            font-family: "Poppins", sans-serif;
+            font-size: 1.2em;
+            text-align: justify;
+            padding-left: 40px;
+            padding-right: 40px;
+          }
+          .about2:hover {
+            transition: transform 0.2s ease;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+              rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          }
+          
+          .team {
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            color: white;
+            margin-top: 3rem;
+            font-size: 50px;
+          }
+          .flexbox1 {
+            margin-top: -50px;
+          }
+          .flexbox1 h2 {
+            font-family: "Poppins", sans-serif;
+            font-size: 23px;
+          }
+          @media (min-width: 768px) {
+            .container-1 {
+              display: flex;
+              flex-direction: column;
+              flex-wrap: wrap;
+              -ms-flex-align: center;
+              justify-content: center;
+              justify-content: space-around;
+              align-items: center;
+              width: 90%;
+              margin: auto;
+              margin-top: 10vh;
+              padding-top: 5vh;
+              padding-bottom: 5vh;
+              height: 55vh;
+              background-color: #2a2a2c;
+              box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+                rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            }
+          }
+          
+          .flexbox1 {
+            padding-top: 0.4vh;
+            padding-left: 0vh;
+            padding-right: 0vh;
+            background-color: whitesmoke;
+            color: black;
+            font-size: 1.2vw;
+            border-radius: 0.5rem;
+            height: 55vh;
+            line-height-step: 0.5vh;
+            width: 20vw;
+            transition: 0.2s ease;
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          }
+          
+          .flexbox1:hover {
+            transform: scale(1.05);
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+              rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          }
+          
+          #pic {
+            width: 19.5vw;
+            height: 38.85vh;
+            border-radius: 0.5rem;
+          }
+          
+          .footer1 {
+            background-color: #ff9100;
+            color: white;
+            height: 10vh;
+            margin: 0px;
+            line-height: 5vh;
+            text-align: center;
+          }
+          .footer1 p {
+            padding-top: 15px;
+            font-size: 15px;
+          }
+          .button {
+            border-radius: 0.5rem;
+            background-color: #ff9100;
+            border: none;
+            color: #ffffff;
+            text-align: center;
+            font-size: 1vw;
+            padding: 1vh;
+            width: 55%;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: auto;
+            margin-bottom: 10vh;
+          }
+          
+          .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+          }
+          
+          .button span:after {
+            content: "\00bb";
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -5%;
+            transition: 0.5s;
+          }
+          
+          .button:hover span {
+            padding-right: 1.5rem;
+          }
+          
+          .button:hover span:after {
+            opacity: 1;
+            right: 0;
+          }
+          
+          @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px;
+            }
+          
+            .navbar nav {
+                width: 100%;
+            }
+          
+            .navbar ul {
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                margin: 0;
+            }
+          
+            .navbar ul li {
+                display: block;
+                width: 100%;
+                border: none;
+                margin: 5px 0;
+                text-align: center;
+            }
+          
+            .about1 {
+                width: 100%;
+                font-size: 4vw; /* Adjust font size as needed */
+                padding: 2vw; /* Adjust padding */
+            }
+          
+            .about2 {
+                width: 95%;
+                font-size: 3.5vw; /* Adjust font size as needed */
+                padding: 2vw;
+            }
+          
+            .about2 h2 {
+                font-size: 5vw; /* Adjust font size for headings */
+            }
+          
+            .about2 p {
+                font-size: 1.2em; /* Adjust font size for readability */
+                padding-left: 5vw; /* Adjust padding */
+                padding-right: 5vw; /* Adjust padding */
+            }
+          
+            .flexbox1 {
+                width: 90%;
+                font-size: 4vw; /* Adjust font size as needed */
+                margin: 10px auto; /* Center content and add spacing */
+            }
+          
+            .footer1 {
+                height: auto;
+                padding: 10px;
+                font-size: 14px;
+            }
+          }
+          
+          
+          @media (max-width: 480px) {
+            .navbar {
+                padding: 5px;
+            }
+          
+            .navbar nav {
+                text-align: center;
+            }
+          
+            .navbar ul {
+                flex-direction: column;
+            }
+          
+            .navbar ul li {
+                width: 100%;
+                margin: 2px 0;
+            }
+          
+            .about1 {
+                width: 100%;
+                font-size: 5vw;
+                padding: 3vw;
+            }
+          
+            .about2 {
+                width: 100%;
+                font-size: 4vw;
+                padding: 3vw;
+            }
+          
+            .about2 h2 {
+                font-size: 6vw; 
+            }
+          
+            .about2 p {
+                font-size: 1em;
+                padding-left: 4vw;
+                padding-right: 4vw; 
+            }
+          
+            .flexbox1 {
+                width: 100%;
+                font-size: 5vw;
+                margin: 10px auto;
+            }
+          
+            .footer1 {
+                height: auto;
+                padding: 5px;
+                font-size: 12px;
+            }
+          
+            .button {
+                width: 80%;
+                font-size: 4vw; 
+            }
+          }
+    </style>
+
+</head>
+
+<body>
+    <header>
+
+        <div class="container">
+            <div class="navbar"> 
+                <div class="logo">
+                    <!-- <img src="Geeks Icon 2.png" alt="GeeksforGeeks LPU Chapter" width="75px" height="75px"> -->
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="demo2.html">Home</a></li>
+                        <li><a href="eventspage.html"> Events</a></li>
+                        <li><a href="galleryProject.html">Gallery</a></li>
+                        <li><a href="login.html">Register</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <main>
+        <div class="about1">
+        We make it easy for you to stay in the loop with all the exciting happenings around you. 
+        </div>
+        <hr>
+        <div class="about2">
+            <h2>Our Mission</h2>
+            <br>
+            <br>
+            <p>Our mission is to connect event-goers with the events they love. We provide a seamless and straightforward platform where you can discover events, track their progress, and register with just a few clicks. Whether you're looking for a live concert, a tech conference, or a local meetup, uEvents has got you covered.
+            </p>
+        </div>
+
+        <div class="about2">
+            <h2>What We Offer?</h2>
+            <br>
+            <br>
+            <p>
+                Event Tracking: Stay updated on all events—whether they’re currently happening, just around the corner, or recently concluded. We categorize events clearly so you can find exactly what you're looking for.</p>
+                
+                <p>Easy Registration: Found an event you want to attend? Register directly on our platform and secure your spot in seconds.</p>
+                
+                <p>Comprehensive Listings: Our website features a wide range of events, from major public events to smaller community gatherings. Whatever your interest, there's something for everyone on uEvents.</p>
+        </div>
+
+        <div class="about2">
+            <h2>Why Choose uEvents?</h2>
+            <br>
+            <br>
+            <p>
+                All-in-One Event Platform: uEvents is your one-stop-shop for tracking and registering for events. We simplify the process so you can focus on enjoying the experiences.</p>
+                
+               <p>User-Friendly Interface: Our website is designed to be intuitive, making it easy for you to find events, register, and stay informed, whether you're on a computer or mobile device.</p> 
+                
+                <p>>Real-Time Updates: We ensure that our event listings are up-to-date so you can always rely on uEvents for the latest information.</p>
+        </div>
+    <br>
+<footer>
+        <div class="footer1">
+            <p class="footpara">Copyright &copy; uEvents. All Rights Reserved | Gmail: info@uEvents.com </p>
+            <br>
+        </div>
+        <br>
+    </footer>
+</body>
+</html>

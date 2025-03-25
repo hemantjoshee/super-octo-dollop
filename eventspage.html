@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.uEvents.com</title>
+    <script src="https://kit.fontawesome.com/fd63bbae8e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="eventspage.css">
+</head>
+
+<body>
+
+    <div class="info-bar" style="height: 70px;">
+        <div class="hh1">
+            <a href="mailto:info@uEvents.com" id="stop"><i class="fa fa-envelope"></i> info@uEvents.com </a>
+            <div class="stop">|</div>
+            <a href="tel:+10022229999"><i class="fa fa-phone"></i> 89392-12682</a>
+        </div>
+        <div class="icons">
+            <a href="login.html" class="register" id="stop"><i class="fa fa-user"></i> Register</a>
+            <div class="stop"></div>
+            <!-- <a href="login.html" class="login" id="stop"><i class="fa fa-lock"></i> Login</a> -->
+        </div>
+    </div>
+    <div class="bimg">
+        <img src="backgroundimage1.jpg" id="bimg">
+        <div class="btext">
+            <h1 style="left:565px"> CHITKARA <span class="event">EVENTS</span></h1>
+        </div>
+        
+        <div class="btextd">
+            <span class=home2><a href="demo2.html"> Home</a></span> | <span class=eventlisting><a href="upcoming.html">Event Listing</a></span>
+            <button id="addEventBtn" class="add-event-button" style="background-color: rgba(255, 115, 0, 0.418); color: white; border-radius: 15px">Add Event</button>
+        </div>
+        <div class="box">
+            <div class="box1">
+                <a href="allevents.html">
+                    <h3>PAST EVENTS</h3>
+                </a>
+            </div>
+            <div class="box2">
+                <a href="ongoingevents.html">
+                    <h3> ONGOING EVENTS</h3>
+                </a>
+            </div>
+            <div class="box3">
+                <a href="upcoming.html">
+                    <h3> UPCOMING EVENTS</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="eventContainer">
+        <h2>Event Listings</h2>
+    </div>
+
+    <div id="addEventModal" class="add-event-modal" >
+        <div class="add-event-modal-content">
+            <span class="close">&times;</span>
+            <h2 style="background-color: rgb(19, 18, 17);">Add New Event</h2>
+            <form id="addEventForm" style="background-color: rgb(243, 239, 232);">
+                <div class="form-group">
+                    <label for="eventName">Event Name____:</label>
+                    <input type="text" id="eventName" name="eventName" required>
+                </div>
+                <div class="form-group">
+                    <label for="eventDate">Event Date:_____</label>
+                    <input type="date" id="eventDate" name="eventDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="eventDescription">Event Description:</label>
+                    <textarea id="eventDescription" name="eventDescription" rows="1" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="eventImage">Event Image URL:</label>
+                    <input type="url" id="eventImage" name="eventImage" required>
+                </div>
+                <button type="submit" onclick="showsubmitted()">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="profile-box" id="profileBox" style="display: none; margin-top: 70px; margin-right: 25px">
+        <i class="fa fa-user-circle"></i>
+        <span id="profileText">Hello, User</span>
+    </div>
+
+    <script src="eventspage.js"></script>
+</body>
+
+</html>
